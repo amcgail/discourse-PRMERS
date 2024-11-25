@@ -8,4 +8,11 @@ read -p "Enter this public key into the account which has access to discourse-PR
 
 echo "Running the standard discourse setup script."
 echo "This should download and install all requirements for running discourse."
-bash <(wget -qO- https://raw.githubusercontent.com/discourse/install-rails/main/linux)
+
+sudo apt install docker.io
+sudo apt install git
+
+sudo -s
+git clone https://github.com/discourse/discourse_docker.git ~/PRMERS-discourse
+cd ~/PRMERS-discourse
+chmod 700 containers
