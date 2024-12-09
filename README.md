@@ -9,4 +9,8 @@ Customization is achieved through custom plugins and templates.
 
 This repository contains all custom plugins, and the tools needed for deployment and management of the PRMERS server.
 
-To deploy, use `bundle exec cap production deploy`.
+To deploy, use (`bundle exec`) `cap production deploy`.
+
+## Exporting settings
+
+`rake site:export_structure['backup.zip']`

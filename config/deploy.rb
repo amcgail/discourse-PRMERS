@@ -12,8 +12,10 @@ set :repo_url, "git@github.com:amcgail/discourse-PRMERS.git"
 # set the directory for the plugins
 set :deploy_to, "/home/ubuntu/PRMERS-plugins"
 
+set :keep_releases, 3
+
 # Default value for :linked_files is []
-append :linked_files, "plugins"
+#append :linked_files, "plugins"
 
 # Default value for linked_dirs is []
 # append :linked_dirs, "log", "tmp/pids", "tmp/cache", "tmp/sockets", "public/system", "vendor", "storage"
