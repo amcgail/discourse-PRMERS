@@ -1,0 +1,29 @@
+name: Build and Deploy
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+
+    - name: Pull code and Restart server
+      uses: appleboy/ssh-action@v1.2.0
+      with:
+        host: prmers.alecmcgail.com
+        username: ubuntu
+        key: ${{ secrets.SERVER_SSH_KEY }}
+        script: |
+          if [ -d "/home/ubuntu/PRMERS-plugins" ]; then
+            cd /home/ubuntu/PRMERS-plugins
+            git pull
+          else
+            cd /home/ubuntu
+            git clone https://github.com/amcgail/discourse-PRMERS PRMERS-plugins
+          fi
+
+          bash after_pull.sh
