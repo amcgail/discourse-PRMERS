@@ -24,4 +24,4 @@ jobs:
             cd PRMERS-plugins
           fi
 
-          bash after_pull.sh
+          bash deploy/after_pull.sh
