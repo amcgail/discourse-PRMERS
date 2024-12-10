@@ -30,6 +30,7 @@ Besides this repository, here are the currently installed open-source plugins (a
 + [cakeday](https://github.com/discourse/discourse-cakeday.git)
 + [solved](https://github.com/discourse/discourse-solved)
 + [apple-auth](https://github.com/discourse/discourse-apple-auth)
++ [follow](https://github.com/discourse/discourse-follow)
 
 There are other interesting plugins already developed for Discourse. Because it's often easiest to start from something which works, I'll list them here for convenience.
 
