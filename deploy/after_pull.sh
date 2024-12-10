@@ -1,5 +1,5 @@
-export $pluginD=/home/ubuntu/PRMERS-plugins
-export $discourseD=/home/ubuntu/PRMERS-discourse
+export pluginD=/home/ubuntu/PRMERS-plugins
+export discourseD=/home/ubuntu/PRMERS-discourse
 
 cd $pluginD
 python deploy/after_pull.py
