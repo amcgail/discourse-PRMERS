@@ -1,71 +1,87 @@
-GIT
-  remote: https://github.com/capistrano/rbenv.git
-  revision: 1fdb93a6dd4a4ab3fb786c995055cf6949daf7a4
-  specs:
-    capistrano-rbenv (2.2.0)
-      capistrano (~> 3.1)
-      sshkit (~> 1.3)
-
 GEM
   remote: https://rubygems.org/
   specs:
-    airbrussh (1.5.3)
-      sshkit (>= 1.6.1, != 1.7.0)
-    base64 (0.2.0)
-    capistrano (3.19.2)
-      airbrussh (>= 1.0.0)
-      i18n
-      rake (>= 10.0.0)
-      sshkit (>= 1.9.0)
-    capistrano-bundler (2.1.1)
-      capistrano (~> 3.1)
-    capistrano-passenger (0.2.1)
-      capistrano (~> 3.0)
-    capistrano-rails (1.6.3)
-      capistrano (~> 3.1)
-      capistrano-bundler (>= 1.1, < 3)
-    capistrano-sidekiq (2.3.1)
-      capistrano (>= 3.9.0)
-      capistrano-bundler
-      sidekiq (>= 6.0)
-    concurrent-ruby (1.3.4)
-    connection_pool (2.4.1)
-    i18n (1.14.6)
-      concurrent-ruby (~> 1.0)
-    logger (1.6.1)
-    net-scp (4.0.0)
-      net-ssh (>= 2.6.5, < 8.0.0)
-    net-sftp (4.0.0)
-      net-ssh (>= 5.0.0, < 8.0.0)
-    net-ssh (7.3.0)
-    ostruct (0.6.1)
-    rack (3.1.8)
-    rake (13.2.1)
-    redis-client (0.22.2)
-      connection_pool
-    sidekiq (7.3.6)
-      connection_pool (>= 2.3.0)
-      logger
-      rack (>= 2.2.4)
-      redis-client (>= 0.22.2)
-    sshkit (1.23.2)
+    activesupport (7.1.3.3)
       base64
-      net-scp (>= 1.1.2)
-      net-sftp (>= 2.1.2)
-      net-ssh (>= 2.8.0)
-      ostruct
+      bigdecimal
+      concurrent-ruby (~> 1.0, >= 1.0.2)
+      connection_pool (>= 2.2.5)
+      drb
+      i18n (>= 1.6, < 2)
+      minitest (>= 5.1)
+      mutex_m
+      tzinfo (~> 2.0)
+    ast (2.4.2)
+    base64 (0.2.0)
+    bigdecimal (3.1.8)
+    concurrent-ruby (1.2.3)
+    connection_pool (2.4.1)
+    drb (2.2.1)
+    i18n (1.14.5)
+      concurrent-ruby (~> 1.0)
+    json (2.7.2)
+    language_server-protocol (3.17.0.3)
+    minitest (5.23.1)
+    mutex_m (0.2.0)
+    parallel (1.24.0)
+    parser (3.3.1.0)
+      ast (~> 2.4.1)
+      racc
+    prettier_print (1.2.1)
+    racc (1.8.0)
+    rack (3.0.11)
+    rainbow (3.1.1)
+    regexp_parser (2.9.2)
+    rexml (3.3.9)
+    rubocop (1.64.0)
+      json (~> 2.3)
+      language_server-protocol (>= 3.17.0)
+      parallel (~> 1.10)
+      parser (>= 3.3.0.2)
+      rainbow (>= 2.2.2, < 4.0)
+      regexp_parser (>= 1.8, < 3.0)
+      rexml (>= 3.2.5, < 4.0)
+      rubocop-ast (>= 1.31.1, < 2.0)
+      ruby-progressbar (~> 1.7)
+      unicode-display_width (>= 2.4.0, < 3.0)
+    rubocop-ast (1.31.3)
+      parser (>= 3.3.1.0)
+    rubocop-capybara (2.20.0)
+      rubocop (~> 1.41)
+    rubocop-discourse (3.8.0)
+      activesupport (>= 6.1)
+      rubocop (>= 1.59.0)
+      rubocop-capybara (>= 2.0.0)
+      rubocop-factory_bot (>= 2.0.0)
+      rubocop-rails (>= 2.25.0)
+      rubocop-rspec (>= 2.25.0)
+    rubocop-factory_bot (2.25.1)
+      rubocop (~> 1.41)
+    rubocop-rails (2.25.0)
+      activesupport (>= 4.2.0)
+      rack (>= 1.1)
+      rubocop (>= 1.33.0, < 2.0)
+      rubocop-ast (>= 1.31.1, < 2.0)
+    rubocop-rspec (2.29.2)
+      rubocop (~> 1.40)
+      rubocop-capybara (~> 2.17)
+      rubocop-factory_bot (~> 2.22)
+      rubocop-rspec_rails (~> 2.28)
+    rubocop-rspec_rails (2.28.3)
+      rubocop (~> 1.40)
+    ruby-progressbar (1.13.0)
+    syntax_tree (6.2.0)
+      prettier_print (>= 1.2.0)
+    tzinfo (2.0.6)
+      concurrent-ruby (~> 1.0)
+    unicode-display_width (2.5.0)
 
 PLATFORMS
-  x64-mingw-ucrt
-  x86_64-linux
+  ruby
 
 DEPENDENCIES
-  capistrano (~> 3.0)
-  capistrano-bundler
-  capistrano-passenger
-  capistrano-rails
-  capistrano-rbenv!
-  capistrano-sidekiq
+  rubocop-discourse
+  syntax_tree
 
 BUNDLED WITH
-   2.5.22
+   2.5.10

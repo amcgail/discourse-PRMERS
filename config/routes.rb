@@ -5,4 +5,4 @@ MyPluginModule::Engine.routes.draw do
   # define routes here
 end
 
-Discourse::Application.routes.draw { mount ::MyPluginModule::Engine, at: "my-plugin" }
+Discourse::Application.routes.draw { mount ::PRMERSPlugin::Engine, at: "prmers" }

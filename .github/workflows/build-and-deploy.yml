@@ -1,16 +1,13 @@
-name: Build and Deploy
+name: Update YML and Restart Server
 
 on:
-  push:
-    branches:
-      - main
+  workflow_dispatch:  
 
 jobs:
   build:
     runs-on: ubuntu-latest
 
     steps:
-
     - name: Pull code and Restart server
       uses: appleboy/ssh-action@v1.2.0
       with:
@@ -24,6 +21,7 @@ jobs:
           else
             cd /home/ubuntu
             git clone git@github.com:amcgail/discourse-PRMERS.git PRMERS-plugins
+            cd PRMERS-plugins
           fi
 
           bash after_pull.sh
