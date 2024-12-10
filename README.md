@@ -41,7 +41,10 @@ There are other interesting plugins already developed for Discourse. Because it'
 To get started learning, here is a [guide](https://meta.discourse.org/t/how-do-you-learn-to-build-discourse-plugins/57946/8) to getting started with plugin-development generally, and a [tutorial](https://meta.discourse.org/t/learn-how-to-start-building-stuff-for-discourse-if-youre-newbie-like-myself/45954).
 
 # Development Environment
-On Windows, install WSL and follow [these](https://meta.discourse.org/t/install-discourse-on-ubuntu-or-debian-for-development/14727) instructions. Make sure to use Ubuntu 22. Both 18 and 24 failed for me.
+
+On Windows, install WSL. Make sure to use Ubuntu 22. Both 18 and 24 failed for me.
+
+Now follow [these](https://meta.discourse.org/t/install-discourse-on-ubuntu-or-debian-for-development/14727) instructions for Windows (in WSL) or Ubuntu, or [these](https://meta.discourse.org/t/install-discourse-on-macos-for-development/15772) for Mac.
 
 Create a simlink between your local clone of this repository and `PRMERS-plugin` in the `plugins` folder of the discourse distribution.
 
