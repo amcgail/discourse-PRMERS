@@ -105,21 +105,20 @@ hooks:
           - git clone https://github.com/discourse/discourse-solved
           - git clone https://github.com/discourse/discourse-apple-auth
           - git clone https://github.com/discourse/discourse-follow
+          - git clone https://github.com/discourse/discourse-calendar
           - git clone https://github.com/amcgail/discourse-PRMERS
 
-## Any custom commands to run after building
-run:
-  - exec: echo "Beginning of custom commands"
+# for when there was a PRMERS theme component
+#run:
+#  - exec: echo "Installing PRMERS theme component"
 
-  - file:
-      path: /tmp/mythemes.yml
-      contents: |
-        PRMERS-theme:
-          url: https://github.com/amcgail/PRMERS-theme.git
-          add_to_all_themes: true
+#  - file:
+#      path: /tmp/mythemes.yml
+#      contents: |
+#        PRMERS-theme:
+#          url: https://github.com/amcgail/PRMERS-theme.git
+#          add_to_all_themes: true
 
-  - exec:
-      cd: $home
-      cmd: su discourse -c 'bundle exec rake themes:install < /tmp/mythemes.yml'
-
-  - exec: echo "End of custom commands"
+#  - exec:
+#      cd: $home
+#      cmd: su discourse -c 'bundle exec rake themes:install < /tmp/mythemes.yml'

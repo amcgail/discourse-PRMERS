@@ -51,5 +51,6 @@ Now follow [these](https://meta.discourse.org/t/install-discourse-on-ubuntu-or-d
 Create a simlink between your local clone of this repository and `PRMERS-plugin` in the `plugins` folder of the discourse distribution.
 
 Now you can start the server, which will automatically reload (most) changes from plugin development.
+The command to start the development server is `bin/ember-cli -u`.
 
 For the most part, the most efficient way to start building a new feature in a plugin is to emulate an existing plugin, of which there are tons.

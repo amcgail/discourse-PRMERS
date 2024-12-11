@@ -1,8 +1,8 @@
 # the first argument should be the path of the private key
 export PRIVATE_KEY=
 
-sudo apt install docker.io
-sudo apt install git
+sudo apt install docker.io git python3 python3-pip
+python3 -m pip install virtualenv
 
 sudo -s
 git clone https://github.com/discourse/discourse_docker.git /home/ubuntu/PRMERS-discourse

@@ -1,4 +1,4 @@
-TODO_plugin_name:
-  plugin_name_enabled:
+PRMERS:
+  setting a new setting:
     default: false
     client: true
